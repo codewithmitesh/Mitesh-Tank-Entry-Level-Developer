@@ -1,13 +1,14 @@
 import axios from 'axios';
 
-const fetchRocketData = async () => {
+const fetchCapsuleData = async () => {
     try {
-        const response = await axios.get('https://api.spacexdata.com/v3/rockets');
+        const response = await axios.get('https://api.spacexdata.com/v3/capsules');
         return response.data;
     } catch (error) {
-        console.error('Error fetching rocket data:', error);
+        console.error('Error fetching capsule data:', error);
         return [];
     }
 };
 
-export { fetchRocketData };
+
+export { fetchCapsuleData };
