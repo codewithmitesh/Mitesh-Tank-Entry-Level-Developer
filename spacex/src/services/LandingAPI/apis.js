@@ -11,4 +11,4 @@ const fetchCapsuleData = async () => {
 };
 
 
-export { fetchCapsuleData };
+export default fetchCapsuleData;

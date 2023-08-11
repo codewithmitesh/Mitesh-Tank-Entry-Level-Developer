@@ -4,16 +4,9 @@ const Banner = () => {
     return (
         <div className='w-full h-screen bg-black text-white'
         >
-            {/* <section className="w-full lg:h-screen md:h-[550px] h-[830px] relative overflow-x-hidden flex justify-end">
-
-                <div className="h-[60%] w-[80%] lg:h-[90vh] md:h-[50vh] lg:w-1/2 md:w-[55%]" >
-                    <div className="h-full w-full lg:h-[90vh] md:h-[50vh] lg:w-1/2 md:w-[55%]" >
-                        <img src={bgImage} alt="Hero Background Vector " className='object-cover' />
-                    </div>
-            </section> */}
             < div className='w-full h-screen' >
                 <img
-                    className='top-0 left-0 w-full h-screen object-cover'
+                    className='top-0 left-0 w-full h-screen object-cover '
                     src={bgImage}
                     alt='/'
                 />
