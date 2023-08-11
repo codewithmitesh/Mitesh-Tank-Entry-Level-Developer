@@ -29,52 +29,50 @@ const Header = () => {
 
                     <div
                         className={
-                            "lg:flex flex-grow items-center " +
+                            "lg:flex flex-grow items-center justify-end " +
                             (navbarOpen ? " flex" : " hidden")
                         }
                         id="example-navbar-danger"
                     >
-
                         <ul className="flex flex-col lg:flex-row list-none">
                             <li className="nav-item">
                                 <a
-                                    className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                                    className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75 transition duration-150 border-b-2 border-transparent hover:border-white"
                                     href="#"
                                 >
-
-                                    <span className="ml-2 mt-2 text-xs leading-lg text-white opacity-75 transition duration-150 border-b-1 border-transparent hover:border-white">FALCON</span>
+                                    <span className="ml-2 mt-2 text-xs leading-lg text-white  transition duration-150 border-b-1 border-transparent hover:border-white ">FALCON</span>
                                 </a>
                             </li>
                             <li className="nav-item">
                                 <a
-                                    className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                                    className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75 transition duration-150 border-b-2 border-transparent hover:border-white"
                                     href="#"
                                 >
-                                    <span className="ml-2 mt-2 text-xs leading-lg text-white opacity-75">FALCON HEAVY</span>
+                                    <span className="ml-2 mt-2 text-xs leading-lg text-white ">FALCON HEAVY</span>
                                 </a>
                             </li>
                             <li className="nav-item">
                                 <a
-                                    className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                                    className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75 transition duration-150 border-b-2 border-transparent hover:border-white"
                                     href="#"
                                 >
-                                    <span className="ml-2 mt-2 text-xs leading-lg text-white opacity-75">DRAGON</span>
+                                    <span className="ml-2 mt-2 text-xs leading-lg text-white ">DRAGON</span>
                                 </a>
                             </li>
                             <li className="nav-item">
                                 <a
-                                    className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                                    className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75 transition duration-150 border-b-2 border-transparent hover:border-white"
                                     href="#"
                                 >
-                                    <span className="ml-2 mt-2 text-xs leading-lg text-white opacity-75">STARSHIP</span>
+                                    <span className="ml-2 mt-2 text-xs leading-lg text-white ">STARSHIP</span>
                                 </a>
                             </li>
                             <li className="nav-item">
                                 <a
-                                    className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                                    className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75 transition duration-150 border-b-2 border-transparent hover:border-white"
                                     href="#"
                                 >
-                                    <span className="ml-2 mt-2 text-xs leading-lg text-white opacity-75">STARLINK</span>
+                                    <span className="ml-2 mt-2 text-xs leading-lg text-white ">STARLINK</span>
                                 </a>
                             </li>
                         </ul>
