@@ -56,7 +56,7 @@ const Showcase = () => {
                                     setType(e.target.value)
                                 }}
                             >
-                                <option value="">Select Type</option>
+                                <option value="">All</option>
                                 {typeOptions.map((option) => (
                                     <option key={option} value={option}>
                                         {option}
@@ -72,7 +72,7 @@ const Showcase = () => {
                             <select id="status" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" value={status} onChange={(e) => {
                                 setStatus(e.target.value)
                             }}>
-                                <option value="">Select Status</option>
+                                <option value="">All</option>
                                 {capsuleStatusOptions.map((option) => (
                                     <option key={option} value={option}>
                                         {option}
@@ -93,9 +93,7 @@ const Showcase = () => {
                     <div className="lg:p-10 p-2 md:p-1 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-20 p-10 sm:p-0 sm-0 md:p-0 " >
                         {currentResults.map((item, index) => {
                             return (
-                                <div key={item.capsule_serial} className="rounded 
-                                    md:
-                                overflow-hidden shadow-lg border-solid border-2 border-gray-400 backdrop-blur-sm">
+                                <div key={item.capsule_serial} className="rounded md:overflow-hidden shadow-lg border-solid border-2 border-gray-400 backdrop-blur-sm ">
                                     <img className="w-full h-56 " src={`../../../public/Capsules/cap${item.capsule_serial}.jpg`} alt="Sunset in the mountains" />
                                     <div className="px-1 py-1 md:p-2 lg:p-2">
                                         <p className="  lg:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">  {item.capsule_serial}</p>
