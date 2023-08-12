@@ -1,8 +1,8 @@
 ## SpaceX
 
 - Assignment SpaceX Demo
-- Video Demo :- [Click here]()
-- Code Walkthrough :-  [Click here]()
+- Video Demo :- [Click here](https://www.veed.io/view/348ba112-8b15-47ac-8bb2-ce8a465c4bca?panel=share)
+- Code Walkthrough :-  [Click here](https://www.veed.io/view/7de4a938-1e9f-430c-a7f4-3a7aff513061?panel=share)
 
 <hr/>
 <img src="/screenshots/spacex3.gif" />
