@@ -4,11 +4,10 @@ import Logo from '../../assets/Logo/logo.png'
 
 const Footer = () => {
     return (
-        <footer className="bg-black text-white py-1 bg-no-repeat bg-cover bg-fixed z-50 " style={{ backgroundImage: `url(${bgImageFilter})` }}   >
+        <footer data-testid="footer" className="bg-black text-white py-1 bg-no-repeat bg-cover bg-fixed z-50 " style={{ backgroundImage: `url(${bgImageFilter})` }}   >
             <div className="container mx-auto flex flex-col items-center justify-center lg:flex-row">
                 <div className="mb-0 mt-0 lg:m-8 lg:mr-8 ml-0">
                     <img
-                        // src="https://www.logo.wine/a/logo/SpaceX/SpaceX-White-Dark-Background-Logo.wine.svg"
                         src={Logo}
                         alt="SpaceX Logo"
                         className="w-40 h-auto"

@@ -1,11 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import bgImageTiles from '../../assets/Hero/BgImage2.jpg'
 import bgImageFilter from '../../assets/Hero/BgImage3.jpg'
-import bgImageFilter2 from '../../assets/Hero/BgImage2.jpg'
 import fetchCapsuleData from '../../services/LandingAPI/apis'
-
-
-
 
 const Showcase = () => {
 
@@ -17,15 +13,12 @@ const Showcase = () => {
     useEffect(() => {
         const fetchCapsules = async () => {
             const data = await fetchCapsuleData();
-            console.log(data)
-            // setCapsuleData(data);
             const filteredResults = data.filter((capsule) => {
                 return (
                     (status === '' || capsule.status === status) &&
                     (type === '' || capsule.type === type)
                 );
             });
-
             setSearchResults(filteredResults);
         };
         fetchCapsules();
@@ -62,9 +55,6 @@ const Showcase = () => {
                                         {option}
                                     </option>
                                 ))}
-                                {/* <option value="Dragon 1.0">Dragon 1.0</option>
-                                <option value="Dragon 1.1">Dragon 1.1</option>
-                                <option value="Dragon 2.0">Dragon 2.0</option> */}
                             </select>
                         </div>
                         <div className='m-2 md:m-3 lg:m-5'>
@@ -94,7 +84,7 @@ const Showcase = () => {
                         {currentResults.map((item, index) => {
                             return (
                                 <div key={item.capsule_serial} className="rounded md:overflow-hidden shadow-lg border-solid border-2 border-gray-400 backdrop-blur-sm ">
-                                    <img className="w-full h-56 " src={`../../../public/Capsules/cap${item.capsule_serial}.jpg`} alt="Sunset in the mountains" />
+                                    <img className="w-full h-56 " src={`/Capsules/cap${item.capsule_serial}.jpg`} alt="Sunset in the mountains" />
                                     <div className="px-1 py-1 md:p-2 lg:p-2">
                                         <p className="  lg:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">  {item.capsule_serial}</p>
                                     </div>

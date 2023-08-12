@@ -11,10 +11,7 @@ const Header = () => {
     const [password, setPassword] = useState('')
 
     const handleLogin = async () => {
-        console.log(email, password);
         const res = await login(email, password)
-        console.log("this is the reponsecode")
-        console.log(res.data.message)
         if (res.data.message === "Login successful") {
             alert("Login Successful")
             setShowModal(false)
@@ -29,10 +26,7 @@ const Header = () => {
     }
 
     const handleRegister = async () => {
-        console.log(email, password);
         const res = await register(email, password)
-        console.log("this is the reponsecode")
-        console.log(res.data)
         if (res.data.message === "User registered successfully") {
             alert("User registered successfully!!!")
             setShowModal(false)
@@ -44,13 +38,11 @@ const Header = () => {
 
     return (
         <>
-            {/* <div className="w-full flex flex-wrap items-center justify-between px-2 py-3 bg-transparent mb-3 overflow-x-hidden fixed z-50 top-0 left-0 "> */}
-            <div
+            <div data-testid="header"
                 className={`w-full flex flex-wrap items-center justify-between px-2 py-3 bg-transparent mb-3 overflow-x-hidden fixed z-50 top-0 left-0 
                     }`}
             >
                 <div className="px-4 py-3 mx-auto flex flex-wrap items-center justify-between">
-                    {/* container uper wale me*/}
                     <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
                         <a
                             className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
@@ -123,13 +115,11 @@ const Header = () => {
             {
                 showModal ? (
                     <>
-                        <div
+                        <div data-testid="modal"
                             className="justify-center items-center  flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
                         >
                             <div className="relative lg:w-auto lg:my-6 m-1 lg:mx-auto lg:max-w-3xl">
-                                {/*content*/}
                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-transparent text-white   backdrop-blur-lg  outline-none focus:outline-none">
-                                    {/*header*/}
                                     <div className="flex items-start justify-between m-2 lg:m-0 p-5 border-b border-solid border-slate-200 rounded-t">
                                         <h3 className="lg:text-3xl text-6 font-semibold">
                                             Login/Register
@@ -151,7 +141,6 @@ const Header = () => {
                                             />
                                         </div>
                                     </div>
-                                    {/*footer*/}
                                     <div className="flex items-center justif    y-end  lg:p-6 p-2 border-t border-solid border-slate-200 rounded-b">
                                         <button
                                             className="text-red-500 background-transparent font-bold uppercase lg:px-6 px-2 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
@@ -178,7 +167,6 @@ const Header = () => {
                                 </div>
                             </div>
                         </div>
-                        {/* <div className="opacity-25 fixed inset-0 z-40 bg-black"></div> */}
                     </>
                 ) : null}
         </>
